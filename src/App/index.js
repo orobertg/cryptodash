@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import './App.css';
-import WelcomeMessage from './Welcomemessage';
-import styled, {css} from 'styled-components';
 import AppLayout from './AppLayout';
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
+import Settings from '../Settings';
+import WelcomeMessage from '../Settings/Welcomemessage';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
       <AppLayout>
         <AppProvider>
           <AppBar/>
-          <WelcomeMessage />
+          <Settings />
         </AppProvider>
       </AppLayout>
     );
